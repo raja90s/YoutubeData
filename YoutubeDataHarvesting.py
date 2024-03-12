@@ -33,7 +33,7 @@ st.set_page_config(layout="wide",
                    )
 # creating option menu
 with st.sidebar:
-    selected = bar(None, ["Home", "Extract and Mutate"],
+    selected = bar(None, ["Home", "Extract and Transform"],
                    # icons=["house-door-fill", "tools", "card-text"],
                    default_index=0,
                    orientation="vertical",
@@ -47,18 +47,18 @@ if selected == "Home":
     # Title Image
 
     col1, col2 = st.columns(2, gap='medium')
-    col1.markdown("<h3 style='text-align: center;color: blue'>YouTube Data Harvesting and Warehousing</h1>", unsafe_allow_html=True)
+    col1.markdown("<h3 style='text-align: center;color: green'>YouTube Data Harvesting and Warehousing</h1>", unsafe_allow_html=True)
 
     # col1.markdown("## :blue[Domain] : Social Media")
     # col1.markdown("## :blue[Technologies used] : Python,MongoDB, Youtube Data API, MySql, Streamlit")
     col1.markdown(
-        "## :green[Overview] : Retrieving the Youtube channels data from the Google API, storing it in a MongoDB as data lake, migrating and transforming data into a SQL database,then querying the data and displaying it in the Streamlit app.")
+        "## :blue[Overview] : Retrieving the Youtube channels data from the Google API, storing it in a MongoDB as data lake, migrating and transforming data into a SQL database,then querying the data and displaying it in the Streamlit app.")
     col2.markdown("#   ")
     col2.markdown("#   ")
     col2.markdown("#   ")
     # col2.image("youtubeMain.png")
 
-elif selected == "Extract and Mutate":
+elif selected == "Extract and Transform":
     # Title
     st.markdown("<h1 style='text-align: center; color: green;'>Data Harvesting</h1>", unsafe_allow_html=True)
 
